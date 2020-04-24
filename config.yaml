@@ -1,0 +1,5 @@
+i3-config: /home/thomas/.config/i3/config
+polybar-config: /home/thomas/.config/polybar/config
+xresources: /home/thomas/.Xresources
+nitrogen-config: /home/thomas/.config/nitrogen/bg-saved.cfg
+wallpaper-path: /home/thomas/.config/nitrogen/

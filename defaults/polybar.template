@@ -115,6 +115,38 @@ format-padding = 2
 
 label = %date% %time%
 
+[module/cpu]
+type = internal/cpu
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 0.5
+
+label = CPU %percentage%%
+
+[module/memory]
+type = internal/memory
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 3
+
+label = %gb_used%/%gb_free%
+
+[module/network]
+type = internal/network
+; Name of the network interface to display. You can get the names of the
+; interfaces on your machine with `ip link`
+; Wireless interfaces often start with `wl` and ethernet interface with `eno` or `eth`
+interface = eno2
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 3.0
+
+label-disconnected = not connected
+label-connected = %local_ip%%upspeed:9%↑%downspeed:9%↓
+
 [module/powermenu]
 type = custom/menu
 
